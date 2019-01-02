@@ -1,4 +1,4 @@
-package com.hexad.movietask.view;
+package com.hexad.movietask;
 
 import android.app.Application;
 
