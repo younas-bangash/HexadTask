@@ -5,7 +5,9 @@ import android.support.annotation.Nullable;
 
 import com.hexad.movietask.R;
 import com.hexad.movietask.databinding.ActivityFragmentContainerBinding;
+import com.hexad.movietask.utils.FragmentUtils;
 import com.hexad.movietask.view.base.BaseActivity;
+import com.hexad.movietask.view.fragment.SplashFragment;
 
 /**
  * Created by Muhammad Younas
@@ -17,6 +19,8 @@ public class FragmentContainerActivity extends BaseActivity<ActivityFragmentCont
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        FragmentUtils.replaceFragment(this, SplashFragment.newInstance(),
+                R.id.fragContainer, false, FragmentUtils.FragmentAnimation.TRANSITION_NONE);
     }
 
     @Override

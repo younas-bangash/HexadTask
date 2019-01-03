@@ -56,7 +56,7 @@ public class FragmentUtils {
 
     @IntDef({FragmentAnimation.TRANSITION_SLIDE_LEFT_RIGHT_WITHOUT_EXIT,
             FragmentAnimation.TRANSITION_NONE})
-    @interface FragmentAnimation {
+    public @interface FragmentAnimation {
         int TRANSITION_NONE = 0;
         int TRANSITION_SLIDE_LEFT_RIGHT_WITHOUT_EXIT = 1;
     }

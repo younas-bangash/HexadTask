@@ -1,12 +1,13 @@
 package com.hexad.movietask.view.fragment;
 
 
-import android.arch.lifecycle.Observer;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 
 import com.hexad.movietask.R;
 import com.hexad.movietask.databinding.FragmentSplashBinding;
+import com.hexad.movietask.utils.FragmentUtils;
 import com.hexad.movietask.view.base.BaseFragment;
 import com.hexad.movietask.viewmodel.SplashViewModel;
 
@@ -42,12 +43,10 @@ public class SplashFragment extends BaseFragment<SplashViewModel, FragmentSplash
 
     @Override
     protected void observeLiveData() {
-        viewModel.getSplashTimerFinish().observe(this, new Observer<Boolean>() {
-            @Override
-            public void onChanged(@Nullable Boolean isTimerFinish) {
-
-            }
-        });
+        viewModel.getSplashTimerFinish().observe(this, isTimerFinish ->
+                FragmentUtils.replaceFragment((AppCompatActivity) getActivity(),
+                        BookListFragment.newInstance(), R.id.fragContainer, false,
+                        FragmentUtils.FragmentAnimation.TRANSITION_SLIDE_LEFT_RIGHT_WITHOUT_EXIT));
     }
 
 }
