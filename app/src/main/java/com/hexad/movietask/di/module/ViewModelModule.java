@@ -3,6 +3,7 @@ package com.hexad.movietask.di.module;
 import android.arch.lifecycle.ViewModel;
 import android.arch.lifecycle.ViewModelProvider;
 
+import com.hexad.movietask.viewmodel.BookListViewModel;
 import com.hexad.movietask.viewmodel.SplashViewModel;
 import com.hexad.movietask.viewmodel.ViewModelFactory;
 
@@ -16,10 +17,13 @@ public abstract class ViewModelModule {
     @Binds
     @IntoMap
     @ViewModelKey(SplashViewModel.class)
-    @SuppressWarnings("unused")
     abstract ViewModel bindsLoginViewModel(SplashViewModel splashViewModel);
 
     @Binds
-    @SuppressWarnings("unused")
+    @IntoMap
+    @ViewModelKey(BookListViewModel.class)
+    abstract ViewModel bindsBookListViewModel(BookListViewModel bookListViewModel);
+
+    @Binds
     abstract ViewModelProvider.Factory bindsViewModelFactory(ViewModelFactory viewModelFactory);
 }
