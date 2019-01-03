@@ -37,14 +37,14 @@ public abstract class BaseFragment<V extends ViewModel, D extends ViewDataBindin
     @LayoutRes
     protected abstract int getLayoutRes();
 
-    protected abstract void observeApiCalls();
+    protected abstract void observeLiveData();
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         AndroidSupportInjection.inject(this);
         super.onCreate(savedInstanceState);
         viewModel = ViewModelProviders.of(this, viewModelFactory).get(getViewModel());
-        observeApiCalls();
+        observeLiveData();
     }
 
     @Nullable

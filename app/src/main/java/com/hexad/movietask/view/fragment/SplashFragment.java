@@ -1,31 +1,53 @@
 package com.hexad.movietask.view.fragment;
 
 
+import android.arch.lifecycle.Observer;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
+import android.support.annotation.Nullable;
 
 import com.hexad.movietask.R;
+import com.hexad.movietask.databinding.FragmentSplashBinding;
+import com.hexad.movietask.view.base.BaseFragment;
+import com.hexad.movietask.viewmodel.SplashViewModel;
 
 
 /**
- * A simple {@link Fragment} subclass.
+ * A fragment which show the starting screen of the application
+ * <p>
+ * Created by Muhammad Younas
+ * Created Date : 1/3/2019.
+ * Email Address : engr.younasbangash@gmail.com
  */
-public class SplashFragment extends Fragment {
+public class SplashFragment extends BaseFragment<SplashViewModel, FragmentSplashBinding> {
 
-
-    public SplashFragment() {
-        // Required empty public constructor
+    public static SplashFragment newInstance() {
+        return new SplashFragment();
     }
 
+    @Override
+    protected Class<SplashViewModel> getViewModel() {
+        return SplashViewModel.class;
+    }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_splash, container, false);
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        viewModel.startSplashTimer();
+    }
+
+    @Override
+    protected int getLayoutRes() {
+        return R.layout.fragment_splash;
+    }
+
+    @Override
+    protected void observeLiveData() {
+        viewModel.getSplashTimerFinish().observe(this, new Observer<Boolean>() {
+            @Override
+            public void onChanged(@Nullable Boolean isTimerFinish) {
+
+            }
+        });
     }
 
 }
