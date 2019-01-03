@@ -1,6 +1,6 @@
 package com.hexad.movietask.di.builder;
 
-import com.tawasul.employee.services.view.fragment.LoginFragment;
+import com.hexad.movietask.view.fragment.SplashFragment;
 
 import dagger.Module;
 import dagger.android.ContributesAndroidInjector;
@@ -10,6 +10,6 @@ public abstract class FragmentBuilderModule {
 
     @SuppressWarnings("unused")
     @ContributesAndroidInjector
-    abstract LoginFragment contributeLoginFragment();
+    abstract SplashFragment contributeSplashFragment();
 
 }

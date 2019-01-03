@@ -1,4 +1,4 @@
-package com.hexad.movietask.viewmodel;
+package com.hexad.movietask.di.module;
 
 import android.arch.lifecycle.ViewModel;
 
