@@ -60,4 +60,8 @@ dependencies {
     implementation "android.arch.lifecycle:extensions:$ARCHITECTURE_COMPONENT_VERSION"
     implementation "android.arch.lifecycle:common-java8:$ARCHITECTURE_COMPONENT_VERSION"
     implementation "android.arch.lifecycle:reactivestreams:$ARCHITECTURE_COMPONENT_VERSION"
+
+    // Implementation of recyclerview using android data binding collerction
+    implementation 'me.tatarka.bindingcollectionadapter2:bindingcollectionadapter:2.2.0'
+    implementation 'me.tatarka.bindingcollectionadapter2:bindingcollectionadapter-recyclerview:2.2.0'
 }
