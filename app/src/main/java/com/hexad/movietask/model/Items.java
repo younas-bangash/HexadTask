@@ -12,10 +12,10 @@ import java.util.List;
  */
 public class Items {
     @SerializedName("kind")
-    public String kind;
+    private String kind;
 
     @SerializedName("totalItems")
-    public Integer totalItems;
+    private Integer totalItems;
 
     @SerializedName("items")
     public List<BookDetail> items = new ArrayList<>();

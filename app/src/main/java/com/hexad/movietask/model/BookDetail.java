@@ -36,6 +36,14 @@ public class BookDetail implements Comparable<BookDetail> {
         Glide.with(view.getContext()).load(imageUrl).into(view);
     }
 
+    public void setUserRating(String userRating) {
+        this.userRating = userRating;
+    }
+
+    public String getId() {
+        return id;
+    }
+
     public VolumeInfo getVolumeInfo() {
         return volumeInfo;
     }
@@ -46,7 +54,7 @@ public class BookDetail implements Comparable<BookDetail> {
 
     @Override
     public int compareTo(BookDetail bookDetail) {
-        int compareRating = Integer.parseInt(bookDetail.userRating);
-        return compareRating - Integer.parseInt(this.userRating);
+        int compareRating = (int) Float.parseFloat(bookDetail.userRating);
+        return compareRating - ((int) Float.parseFloat(this.userRating));
     }
 }

@@ -6,6 +6,10 @@
     <data>
 
         <variable
+            name="ratingBarChangeListener"
+            type="com.hexad.movietask.interfacec.OnRatingBarChangeListener" />
+
+        <variable
             name="item"
             type="com.hexad.movietask.model.BookDetail" />
     </data>
@@ -75,6 +79,7 @@
                         android:layout_gravity="bottom"
                         android:isIndicator="false"
                         android:numStars="5"
+                        app:onRatingBarChangeListener="@{()->ratingBarChangeListener.onRatingBarChange(ratingBar,item)}"
                         android:rating="@{item.userRating}"
                         android:stepSize="1.0" />
 
