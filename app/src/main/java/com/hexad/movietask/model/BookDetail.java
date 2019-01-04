@@ -11,23 +11,26 @@ import com.google.gson.annotations.SerializedName;
  * Created Date : 1/4/2019.
  * Email Address : engr.younasbangash@gmail.com
  */
-public class BookDetail {
+public class BookDetail implements Comparable<BookDetail> {
     @SerializedName("kind")
-    public String kind;
+    private String kind;
 
     @SerializedName("id")
-    public String id;
+    private String id;
 
     @SerializedName("etag")
-    public String etag;
+    private String etag;
+
+    @SerializedName("userRating")
+    private String userRating;
 
     @SerializedName("selfLink")
-    public String selfLink;
+    private String selfLink;
 
     @SerializedName("volumeInfo")
-    public VolumeInfo volumeInfo;
+    private VolumeInfo volumeInfo;
 
-    @BindingAdapter({"bind:imageUrl"})
+    @BindingAdapter({"app:imageUrl"})
     public static void loadImage(ImageView view, String imageUrl) {
         /**  loading book images using Glide library **/
         Glide.with(view.getContext()).load(imageUrl).into(view);
@@ -35,5 +38,15 @@ public class BookDetail {
 
     public VolumeInfo getVolumeInfo() {
         return volumeInfo;
+    }
+
+    public Float getUserRating() {
+        return Float.valueOf(userRating);
+    }
+
+    @Override
+    public int compareTo(BookDetail bookDetail) {
+        int compareRating = Integer.parseInt(bookDetail.userRating);
+        return compareRating - Integer.parseInt(this.userRating);
     }
 }

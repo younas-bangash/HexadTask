@@ -50,21 +50,33 @@
                         android:paddingLeft="@dimen/book_title_padding"
                         android:paddingTop="@dimen/book_title_padding"
                         android:paddingRight="@dimen/book_title_padding"
-                        android:text="@{item.volumeInfo.title}"
+                        android:text="@{item.volumeInfo.title + ` (`+ item.volumeInfo.publishedDate+`)`}"
                         android:textColor="@android:color/black"
-                        android:textSize="@dimen/book_title" />
+                        android:textSize="@dimen/book_title"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/descp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:ellipsize="end"
                         android:paddingLeft="@dimen/book_title_padding"
                         android:paddingTop="@dimen/book_title_padding"
                         android:paddingRight="@dimen/book_title_padding"
-                        android:text="@{item.volumeInfo.description}"
+                        android:text="@{item.volumeInfo.publisher}"
                         android:textColor="@android:color/darker_gray"
                         android:textSize="@dimen/book_title" />
+
+
+                    <android.support.v7.widget.AppCompatRatingBar
+                        android:id="@+id/ratingBar"
+                        style="?android:attr/ratingBarStyleIndicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:isIndicator="false"
+                        android:numStars="5"
+                        android:rating="@{item.userRating}"
+                        android:stepSize="1.0" />
 
                 </LinearLayout>
 

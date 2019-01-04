@@ -9,6 +9,8 @@ import com.hexad.movietask.R;
 import com.hexad.movietask.model.BookDetail;
 import com.hexad.movietask.view.base.BookRepository;
 
+import java.util.Collections;
+
 import javax.inject.Inject;
 
 import me.tatarka.bindingcollectionadapter2.ItemBinding;
@@ -33,6 +35,7 @@ public class BookListViewModel extends ViewModel {
     public void readBookList() {
         setProgressBarVisibility(true);
         items.addAll(bookRepository.readBookJsonFile());
+        Collections.sort(items);
         setProgressBarVisibility(false);
     }
 

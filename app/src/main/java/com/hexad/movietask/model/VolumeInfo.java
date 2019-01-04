@@ -13,37 +13,41 @@ import java.util.List;
 public class VolumeInfo {
 
     @SerializedName("title")
-    public String title;
+    private String title;
 
     @SerializedName("authors")
-    public List<String> authors = new ArrayList<>();
+    private List<String> authors = new ArrayList<>();
 
     @SerializedName("publisher")
-    public String publisher;
+    private String publisher;
 
     @SerializedName("publishedDate")
-    public String publishedDate;
+    private String publishedDate;
 
     @SerializedName("description")
-    public String description;
+    private String description;
 
     @SerializedName("imageLinks")
-    public ImageLinks imageLinks;
+    private ImageLinks imageLinks;
 
     @SerializedName("language")
-    public String language;
+    private String language;
 
     @SerializedName("previewLink")
-    public String previewLink;
+    private String previewLink;
 
     @SerializedName("infoLink")
-    public String infoLink;
+    private String infoLink;
 
     @SerializedName("canonicalVolumeLink")
-    public String canonicalVolumeLink;
+    private String canonicalVolumeLink;
 
     @SerializedName("subtitle")
-    public String subtitle;
+    private String subtitle;
+
+    public ImageLinks getImageLinks() {
+        return imageLinks;
+    }
 
     public String getTitle() {
         return title;
@@ -53,4 +57,11 @@ public class VolumeInfo {
         return description;
     }
 
+    public String getPublisher() {
+        return publisher;
+    }
+
+    public String getPublishedDate() {
+        return publishedDate;
+    }
 }

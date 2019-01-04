@@ -5,6 +5,7 @@
     {
       "kind": "books#volume",
       "id": "bZ_JqLD6NAEC",
+      "userRating": "5",
       "etag": "mQKiJRo+Gn8",
       "selfLink": "https://www.googleapis.com/books/v1/volumes/bZ_JqLD6NAEC",
       "volumeInfo": {
@@ -29,6 +30,7 @@
     {
       "kind": "books#volume",
       "id": "OWc-DwAAQBAJ",
+      "userRating": "2",
       "etag": "6+w713V66hM",
       "selfLink": "https://www.googleapis.com/books/v1/volumes/OWc-DwAAQBAJ",
       "volumeInfo": {
@@ -53,6 +55,7 @@
     {
       "kind": "books#volume",
       "id": "ccbEi7Z03GwC",
+      "userRating": "3",
       "etag": "NZPUlRK7IN0",
       "selfLink": "https://www.googleapis.com/books/v1/volumes/ccbEi7Z03GwC",
       "volumeInfo": {
@@ -77,6 +80,7 @@
     {
       "kind": "books#volume",
       "id": "-3tLGxYtEWkC",
+      "userRating": "2",
       "etag": "bxVdVjn5BqU",
       "selfLink": "https://www.googleapis.com/books/v1/volumes/-3tLGxYtEWkC",
       "volumeInfo": {
@@ -102,6 +106,7 @@
     {
       "kind": "books#volume",
       "id": "TBxRAgAAQBAJ",
+      "userRating": "1",
       "etag": "dy1XMhFWVYs",
       "selfLink": "https://www.googleapis.com/books/v1/volumes/TBxRAgAAQBAJ",
       "volumeInfo": {
@@ -127,6 +132,7 @@
     {
       "kind": "books#volume",
       "id": "uW40uwEACAAJ",
+      "userRating": "4",
       "etag": "yHdznloW5v4",
       "selfLink": "https://www.googleapis.com/books/v1/volumes/uW40uwEACAAJ",
       "volumeInfo": {
@@ -150,6 +156,7 @@
     {
       "kind": "books#volume",
       "id": "Ym4usUyOmNEC",
+      "userRating": "3",
       "etag": "48bGM6lI3ek",
       "selfLink": "https://www.googleapis.com/books/v1/volumes/Ym4usUyOmNEC",
       "volumeInfo": {
@@ -174,6 +181,7 @@
     {
       "kind": "books#volume",
       "id": "whnnBgAAQBAJ",
+      "userRating": "2",
       "etag": "04QKRHkuu6w",
       "selfLink": "https://www.googleapis.com/books/v1/volumes/whnnBgAAQBAJ",
       "volumeInfo": {
@@ -197,6 +205,7 @@
     {
       "kind": "books#volume",
       "id": "fdNfigW6K1IC",
+      "userRating": "0",
       "etag": "hNEWjuFGm8w",
       "selfLink": "https://www.googleapis.com/books/v1/volumes/fdNfigW6K1IC",
       "volumeInfo": {
@@ -226,6 +235,7 @@
     {
       "kind": "books#volume",
       "id": "qrywBxaj4ScC",
+      "userRating": "5",
       "etag": "rJIWFYuravc",
       "selfLink": "https://www.googleapis.com/books/v1/volumes/qrywBxaj4ScC",
       "volumeInfo": {
