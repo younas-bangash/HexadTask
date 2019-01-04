@@ -1,0 +1,251 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 10,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "bZ_JqLD6NAEC",
+      "etag": "mQKiJRo+Gn8",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/bZ_JqLD6NAEC",
+      "volumeInfo": {
+        "title": "Collaborative Quilting",
+        "authors": [
+          "Freddy Moran",
+          "Gwen Marston"
+        ],
+        "publisher": "Sterling Publishing Company, Inc.",
+        "publishedDate": "2006",
+        "description": "A bold and unconventional tribute to artistic collaboration by two internationally recognized, award-winning authors. Freddy Moran and Gwen Marston have made beautiful quilts together despite their physical distance from each other--the stunning photos of their many creations prove it. They reveal the secrets of their success, including how to bridge style differences and use each person’s strengths to best advantage. Freddy, an expert in color, discusses her specialty, while Gwen talks about design principles. In addition, each artist offers ten personal tips and structured and unstructured projects to try, as well as ideas for putting them all together. A gorgeous gallery of quilts is sure to inspire needleworkers to combine forces. A Selection of the Crafters Choice Book Club.",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=bZ_JqLD6NAEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=bZ_JqLD6NAEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=bZ_JqLD6NAEC&printsec=frontcover&dq=quilting&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=bZ_JqLD6NAEC&dq=quilting&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Collaborative_Quilting.html?hl=&id=bZ_JqLD6NAEC"
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "OWc-DwAAQBAJ",
+      "etag": "6+w713V66hM",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/OWc-DwAAQBAJ",
+      "volumeInfo": {
+        "title": "Rulerwork Quilting Idea Book",
+        "subtitle": "59 Outline Designs to Fill with Free-Motion Quilting, Tips for Longarm and Domestic Machines",
+        "authors": [
+          "Amanda Murphy"
+        ],
+        "publisher": "C&T Publishing Inc",
+        "publishedDate": "2018-02-01",
+        "description": "Quilting rulers have long been used by longarm quilters to make uniform shapes while quilting, but now, with the advent of the domestic ruler foot, domestic quilters can join in on the fun, too! Amanda Murphy, best-selling author of the Free-Motion Quilting Idea Sampler, starts by showing you how to use 6 basic shapes of machine quilting rulers to lay a foundation for your quilting, then moves on to teaching you 59 different designs. Finish up by following Amanda’s suggestions for filling in the background space with free-motion quilting.",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=OWc-DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=OWc-DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=OWc-DwAAQBAJ&printsec=frontcover&dq=quilting&hl=&cd=2&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=OWc-DwAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://market.android.com/details?id=book-OWc-DwAAQBAJ"
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "ccbEi7Z03GwC",
+      "etag": "NZPUlRK7IN0",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/ccbEi7Z03GwC",
+      "volumeInfo": {
+        "title": "Fresh Quilting",
+        "subtitle": "Fearless Color, Design, and Inspiration",
+        "authors": [
+          "Malka Dubrawsky"
+        ],
+        "publisher": "Interweave",
+        "publishedDate": "2010",
+        "description": "Brighten up any room with fun, contemporary, and functional projects exploding with sensational color! Fresh Quilting presents 21 brilliant designs featuring quilt artist Malka Dubrawsky's intoxicating colors and unexpected palettes. Learn to create beautiful and lively pieces for you and your home--from modern quilts and fun pillows to flirty bags and scarves. In addition to clear directions and step-by-step illustrations for machine-sewn patchwork and quilted projects, Fresh Quilting includes a detailed section of techniques from basic piecing, cutting, and measuring methods to more advanced.",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=ccbEi7Z03GwC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=ccbEi7Z03GwC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=ccbEi7Z03GwC&dq=quilting&hl=&cd=3&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=ccbEi7Z03GwC&dq=quilting&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Fresh_Quilting.html?hl=&id=ccbEi7Z03GwC"
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "-3tLGxYtEWkC",
+      "etag": "bxVdVjn5BqU",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/-3tLGxYtEWkC",
+      "volumeInfo": {
+        "title": "Denyse Schmidt Quilts",
+        "subtitle": "30 Colorful Quilt and Patchwork Projects",
+        "authors": [
+          "Denyse Schmidt",
+          "Bethany Lyttle"
+        ],
+        "publisher": "Chronicle Books",
+        "publishedDate": "2005-07-21",
+        "description": "A richly illustrated resource for home quilters presents a collection of thirty quilt projects, ranging from the simple to challenging items for the experienced quilter--including patchwork slippers, aprons, tote bags, pillows, and more--with a review of the fundamental principles and techniques of quilting, step-by-step instructions, detailed patterns, sewing tips, and more. Original. 15,000 first printing.",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=-3tLGxYtEWkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=-3tLGxYtEWkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=-3tLGxYtEWkC&printsec=frontcover&dq=quilting&hl=&cd=4&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=-3tLGxYtEWkC&dq=quilting&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Denyse_Schmidt_Quilts.html?hl=&id=-3tLGxYtEWkC"
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "TBxRAgAAQBAJ",
+      "etag": "dy1XMhFWVYs",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/TBxRAgAAQBAJ",
+      "volumeInfo": {
+        "title": "Quilting with a Modern Slant",
+        "subtitle": "People, Patterns, and Techniques Inspiring the Modern Quilt Community",
+        "authors": [
+          "Rachel May",
+          "Rachel Suzanne May"
+        ],
+        "publisher": "Storey Publishing",
+        "publishedDate": "2014-01-01",
+        "description": "Profiles more than seventy modern quilters, offering step-by-step instructions on their techniques and quilting projects.",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=TBxRAgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=TBxRAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=TBxRAgAAQBAJ&printsec=frontcover&dq=quilting&hl=&cd=5&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=TBxRAgAAQBAJ&dq=quilting&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Quilting_with_a_Modern_Slant.html?hl=&id=TBxRAgAAQBAJ"
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "uW40uwEACAAJ",
+      "etag": "yHdznloW5v4",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/uW40uwEACAAJ",
+      "volumeInfo": {
+        "title": "Complete Guide to Quilting",
+        "authors": [
+          "Better Homes & Gardens"
+        ],
+        "publisher": "Wiley",
+        "publishedDate": "2003-08-18",
+        "description": "A one-stop quilting reference for beginners and experts Better Homes and Gardens Complete Guide to Quilting shows readers how to master every technique, method, tool, fabric, block, seam, knot, and stitch. It's like a private \"show me\" quilt class designed to help quilters expand their skills.",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=uW40uwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=uW40uwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=uW40uwEACAAJ&dq=quilting&hl=&cd=6&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=uW40uwEACAAJ&dq=quilting&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Complete_Guide_to_Quilting.html?hl=&id=uW40uwEACAAJ"
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "Ym4usUyOmNEC",
+      "etag": "48bGM6lI3ek",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/Ym4usUyOmNEC",
+      "volumeInfo": {
+        "title": "Free-Motion Quilting with Angela Walters",
+        "subtitle": "Choose & Use Quilting Designs on Modern Quilts",
+        "authors": [
+          "Angela Walters"
+        ],
+        "publisher": "C&T Publishing Inc",
+        "publishedDate": "2012-06-01",
+        "description": "Popular machine quilter Angela Walters will motivate you to try something new! Learn to stitch her fresh continuous-line designs on your longarm or domestic machine. Includes step-by-step instructions for continuous-line swirls, circles, squares, vines, arcs, and points. Using basic free-motion skills you already have, discover how to approach quilting a modern quilt by working with bold fabrics and negative space, uniting a variety of shapes, and blending designs. Draw inspiration from striking pictures of 20 modern quilts showing Angela’s designs. You’ll love her practical advice for choosing the perfect pattern to give your modern quilt maximum impact.",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=Ym4usUyOmNEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=Ym4usUyOmNEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=Ym4usUyOmNEC&printsec=frontcover&dq=quilting&hl=&cd=7&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=Ym4usUyOmNEC&source=gbs_api",
+        "canonicalVolumeLink": "https://market.android.com/details?id=book-Ym4usUyOmNEC"
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "whnnBgAAQBAJ",
+      "etag": "04QKRHkuu6w",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/whnnBgAAQBAJ",
+      "volumeInfo": {
+        "title": "Fabulously Fast Quilts",
+        "authors": [
+          "Amy Smart"
+        ],
+        "publisher": "Martingale",
+        "publishedDate": "2014-04-08",
+        "description": "Popular blogger Amy Smart shares the tips and techniques she uses to quickly create complex-looking quilts. This go-to collection is ideal for beginners as well as experts who want to make a striking yet speedy quilt. Enjoy 12 versatile designs that have lots of movement and work well with many styles of fabric--a terrific value Choose from three quilts in each of four shortcut categories: strip piecing; quick corners; slick slicing; and stack, slice, and shuffle Find enticing patterns in various sizes; many use precuts and scraps",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=whnnBgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=whnnBgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=whnnBgAAQBAJ&printsec=frontcover&dq=quilting&hl=&cd=8&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=whnnBgAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://market.android.com/details?id=book-whnnBgAAQBAJ"
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "fdNfigW6K1IC",
+      "etag": "hNEWjuFGm8w",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/fdNfigW6K1IC",
+      "volumeInfo": {
+        "title": "Quilting Modern",
+        "subtitle": "Techniques and Projects for Improvisational Quilts",
+        "authors": [
+          "Jacquie Gering",
+          "Katie Pedersen"
+        ],
+        "publisher": "Interweave",
+        "publishedDate": "2012-04-24",
+        "description": "\"Quilting Modern teaches quilters to use improvisational techniques to make graphic, contemporary quilts and quilted projects\"--",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=fdNfigW6K1IC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=fdNfigW6K1IC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=fdNfigW6K1IC&dq=quilting&hl=&cd=9&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=fdNfigW6K1IC&dq=quilting&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Quilting_Modern.html?hl=&id=fdNfigW6K1IC"
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "qrywBxaj4ScC",
+      "etag": "rJIWFYuravc",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/qrywBxaj4ScC",
+      "volumeInfo": {
+        "title": "Heirloom Machine Quilting",
+        "subtitle": "Comprehensive Guide to Hand-Quilting Effects Using Your Sewing Machine",
+        "authors": [
+          "Harriet Hargrave"
+        ],
+        "publisher": "C&T Publishing Inc",
+        "publishedDate": "2004",
+        "description": "A brand-new edition of the machine quilting classic! Includes everything you need to know about machine quilting.",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=qrywBxaj4ScC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=qrywBxaj4ScC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=qrywBxaj4ScC&printsec=frontcover&dq=quilting&hl=&cd=10&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=qrywBxaj4ScC&dq=quilting&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Heirloom_Machine_Quilting.html?hl=&id=qrywBxaj4ScC"
+      }
+    }
+  ]
+}

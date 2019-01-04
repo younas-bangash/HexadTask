@@ -1,6 +1,11 @@
 package com.hexad.movietask.view.fragment;
 
 
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
+
+import com.hexad.movietask.AppApplication;
 import com.hexad.movietask.R;
 import com.hexad.movietask.databinding.FragmentBookListBinding;
 import com.hexad.movietask.view.base.BaseFragment;
@@ -24,6 +29,20 @@ public class BookListFragment extends BaseFragment<BookListViewModel, FragmentBo
     @Override
     protected Class<BookListViewModel> getViewModel() {
         return BookListViewModel.class;
+    }
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        if (viewModel.items.size() == 0) {
+            viewModel.readBookList();
+        }
+    }
+
+    private void setToolBar() {
+        ((AppCompatActivity) getActivity()).setSupportActionBar(dataBinding.toolbar.toolbar);
+        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle(
+                AppApplication.getAppContext().getString(R.string.app_name));
     }
 
     @Override
