@@ -15,6 +15,8 @@ import javax.inject.Inject;
 import io.reactivex.Observable;
 import io.reactivex.ObservableOnSubscribe;
 
+import static com.hexad.movietask.utils.AppUtils.getPosition;
+
 /**
  * Created by Muhammad Younas
  * Created Date : 1/3/2019.
@@ -62,28 +64,6 @@ public class BookRepository {
                 emitter.onError(e);
             }
         });
-    }
-
-    /**
-     * This function will return the item for which rating will be changed
-     *
-     * @return
-     */
-    public int getPosition() {
-        final int min = 0;
-        final int max = 9;
-        return min + (int) (Math.random() * ((max - min) + 1));
-    }
-
-    /**
-     * This function will return the rating
-     *
-     * @return
-     */
-    public int getRating() {
-        final int minRating = 0;
-        final int maxRating = 5;
-        return minRating + (int) (Math.random() * ((maxRating - minRating) + 1));
     }
 
     public Observable getObservable() {

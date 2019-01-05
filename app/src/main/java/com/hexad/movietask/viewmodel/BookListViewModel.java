@@ -21,6 +21,9 @@ import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
 import me.tatarka.bindingcollectionadapter2.ItemBinding;
 
+import static com.hexad.movietask.utils.AppUtils.getPosition;
+import static com.hexad.movietask.utils.AppUtils.getRating;
+
 /**
  * Created by Muhammad Younas
  * Created Date : 1/3/2019.
@@ -122,8 +125,8 @@ public class BookListViewModel extends BaseViewModel {
                 // Do something here on the main thread
                 // Repeat this the same runnable code block again another 2 seconds
                 // 'this' is referencing the Runnable object
-                int rating = bookRepository.getRating();
-                int pos = bookRepository.getPosition();
+                int rating = getRating();
+                int pos = getPosition();
                 updateList.clear();
                 BookDetail bookDetail = items.get(pos);
                 for (BookDetail item : items) {
