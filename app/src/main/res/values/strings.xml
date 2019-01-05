@@ -2,4 +2,6 @@
     <string name="app_name">HexadTask</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="welcomeMessage">Welcome to \n\n HexadTask Book List</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
 </resources>

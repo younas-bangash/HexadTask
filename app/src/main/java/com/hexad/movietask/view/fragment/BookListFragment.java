@@ -36,7 +36,10 @@ public class BookListFragment extends BaseFragment<BookListViewModel, FragmentBo
         super.onCreate(savedInstanceState);
         if (viewModel.items.size() == 0) {
             viewModel.readBookList();
+            viewModel.createObservable();
+            viewModel.createObserver();
         }
+
     }
 
     private void setToolBar() {
@@ -52,6 +55,6 @@ public class BookListFragment extends BaseFragment<BookListViewModel, FragmentBo
 
     @Override
     protected void observeLiveData() {
-
+        // No Live Data to observe
     }
 }
