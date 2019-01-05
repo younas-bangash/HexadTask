@@ -2,8 +2,12 @@ package com.hexad.movietask.view.fragment;
 
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import com.hexad.movietask.AppApplication;
 import com.hexad.movietask.R;
@@ -31,6 +35,14 @@ public class BookListFragment extends BaseFragment<BookListViewModel, FragmentBo
         return BookListViewModel.class;
     }
 
+    @Nullable
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
+        super.onCreateView(inflater, container, savedInstanceState);
+        setToolBar();
+        return dataBinding.getRoot();
+    }
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,9 +55,12 @@ public class BookListFragment extends BaseFragment<BookListViewModel, FragmentBo
     }
 
     private void setToolBar() {
-        ((AppCompatActivity) getActivity()).setSupportActionBar(dataBinding.toolbar.toolbar);
-        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle(
-                AppApplication.getAppContext().getString(R.string.app_name));
+        if (null != getActivity() &&
+                null != ((AppCompatActivity) getActivity()).getSupportActionBar()) {
+            ((AppCompatActivity) getActivity()).getSupportActionBar().show();
+            ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle(
+                    AppApplication.getAppContext().getString(R.string.app_name));
+        }
     }
 
     @Override

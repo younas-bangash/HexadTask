@@ -19,19 +19,11 @@
         android:layout_height="match_parent"
         tools:context="com.hexad.movietask.view.fragment.BookListFragment">
 
-        <include
-            android:id="@+id/toolbar"
-            layout="@layout/custom_toolbar"
-            app:viewModel="@{viewModel}"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-
         <android.support.v7.widget.RecyclerView
             android:id="@+id/list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/toolbar"
+            android:visibility="@{viewModel.progressBarVisibility ? View.GONE : View.VISIBLE}"
             app:itemBinding="@{viewModel.itemBinding}"
             app:items="@{viewModel.items}"
             app:layoutManager="@{LayoutManagers.linear()}" />

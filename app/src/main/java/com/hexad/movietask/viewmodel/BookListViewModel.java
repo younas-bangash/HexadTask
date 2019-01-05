@@ -69,12 +69,14 @@ public class BookListViewModel extends BaseViewModel {
         setProgressBarVisibility(false);
     }
 
+    @Bindable
     public boolean isProgressBarVisibility() {
         return progressBarVisibility;
     }
 
     public void setProgressBarVisibility(boolean progressBarVisibility) {
         this.progressBarVisibility = progressBarVisibility;
+        notifyPropertyChanged(BR.progressBarVisibility);
     }
 
 

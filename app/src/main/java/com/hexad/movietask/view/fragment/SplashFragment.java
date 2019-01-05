@@ -34,6 +34,10 @@ public class SplashFragment extends BaseFragment<SplashViewModel, FragmentSplash
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         viewModel.startSplashTimer();
+        if (null != getActivity() &&
+                null != ((AppCompatActivity) getActivity()).getSupportActionBar()) {
+            ((AppCompatActivity) getActivity()).getSupportActionBar().hide();
+        }
     }
 
     @Override
