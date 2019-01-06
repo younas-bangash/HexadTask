@@ -50,6 +50,8 @@ public class BookListFragment extends BaseFragment<BookListViewModel, FragmentBo
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
+        // retain this fragment
+        setRetainInstance(true);
         if (viewModel.items.size() == 0) {
             viewModel.readBookList();
             viewModel.createObservable();
