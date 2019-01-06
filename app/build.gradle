@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: "org.sonarqube"
 
 android {
     compileSdkVersion 28
@@ -27,6 +28,15 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    sonarqube {
+        properties {
+            property "sonar.sources", "src/main"
+            property "sonar.projectName", "BookList" // Name of your project
+            property "sonar.projectVersion", "1.0.2" // Version of your project
+            property "sonar.projectDescription", "Book List"
+        }
     }
 
     dataBinding {
