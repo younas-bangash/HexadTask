@@ -11,6 +11,12 @@ import dagger.BindsInstance;
 import dagger.Component;
 import dagger.android.support.AndroidSupportInjectionModule;
 
+/**
+ * Created by Muhammad Younas
+ * Created Date : 1/4/2019.
+ * Email Address : engr.younasbangash@gmail.com
+ */
+
 @Singleton
 @Component(modules = {
         AndroidSupportInjectionModule.class,

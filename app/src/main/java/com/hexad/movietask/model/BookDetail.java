@@ -57,4 +57,9 @@ public class BookDetail implements Comparable<BookDetail> {
         int compareRating = (int) Float.parseFloat(bookDetail.userRating);
         return compareRating - ((int) Float.parseFloat(this.userRating));
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
 }

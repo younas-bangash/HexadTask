@@ -43,7 +43,7 @@ public class BookListFragment extends BaseFragment<BookListViewModel, FragmentBo
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
         setToolBar();
-        return dataBinding.getRoot();
+        return getDataBinding().getRoot();
     }
 
     @Override
@@ -52,7 +52,7 @@ public class BookListFragment extends BaseFragment<BookListViewModel, FragmentBo
         setHasOptionsMenu(true);
         // retain this fragment
         setRetainInstance(true);
-        if (viewModel.items.size() == 0) {
+        if (viewModel.items.isEmpty()) {
             viewModel.readBookList();
             viewModel.createObservable();
             viewModel.createObserver();
@@ -76,19 +76,15 @@ public class BookListFragment extends BaseFragment<BookListViewModel, FragmentBo
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.startStopProcess:
-                if (null != getActivity()) {
-                    if (viewModel.isAutomaticAssignerRunning()) {
-                        item.setTitle(getActivity().getString(R.string.start));
-                    } else {
-                        item.setTitle(getActivity().getString(R.string.stop));
-                    }
+        if (item.getItemId() == R.id.startStopProcess) {
+            if (null != getActivity()) {
+                if (viewModel.isAutomaticAssignerRunning()) {
+                    item.setTitle(getActivity().getString(R.string.start));
+                } else {
+                    item.setTitle(getActivity().getString(R.string.stop));
                 }
-                viewModel.startProcess();
-                break;
-            default:
-                break;
+            }
+            viewModel.startProcess();
         }
         return super.onOptionsItemSelected(item);
     }

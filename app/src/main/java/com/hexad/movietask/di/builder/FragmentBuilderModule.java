@@ -6,13 +6,19 @@ import com.hexad.movietask.view.fragment.SplashFragment;
 import dagger.Module;
 import dagger.android.ContributesAndroidInjector;
 
+/**
+ * Created by Muhammad Younas
+ * Created Date : 1/4/2019.
+ * Email Address : engr.younasbangash@gmail.com
+ */
+
 @Module
-public abstract class FragmentBuilderModule {
+public interface FragmentBuilderModule {
 
     @ContributesAndroidInjector
-    abstract SplashFragment contributeSplashFragment();
+    SplashFragment contributeSplashFragment();
 
     @ContributesAndroidInjector
-    abstract BookListFragment contributeBookListFragment();
+    BookListFragment contributeBookListFragment();
 
 }

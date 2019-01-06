@@ -18,10 +18,10 @@ public class Items {
     private Integer totalItems;
 
     @SerializedName("items")
-    public List<BookDetail> items = new ArrayList<>();
+    public List<BookDetail> bookDetailList = new ArrayList<>();
 
     public List<BookDetail> getItems() {
-        return items;
+        return bookDetailList;
     }
 
     public Integer getTotalItems() {

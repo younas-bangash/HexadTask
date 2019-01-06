@@ -9,6 +9,8 @@ import com.hexad.movietask.BR;
 import com.hexad.movietask.R;
 import com.hexad.movietask.interfacec.OnRatingBarChangeListener;
 import com.hexad.movietask.model.BookDetail;
+import com.hexad.movietask.utils.AppUtils;
+import com.hexad.movietask.utils.Logs;
 import com.hexad.movietask.view.base.BookRepository;
 
 import java.util.ArrayList;
@@ -31,6 +33,7 @@ import static com.hexad.movietask.utils.AppUtils.getRating;
  */
 
 public class BookListViewModel extends BaseViewModel {
+    private static final String TAG = BookListViewModel.class.getCanonicalName();
     private BookRepository bookRepository;
     private boolean automaticAssignerRunning = false;
     private Observer observer = null;
@@ -67,7 +70,7 @@ public class BookListViewModel extends BaseViewModel {
 
     public void readBookList() {
         setProgressBarVisibility(true);
-        items.addAll(bookRepository.readBookJsonFile());
+        items.addAll(AppUtils.readBookJsonFile());
         Collections.sort(items);
         setProgressBarVisibility(false);
     }
@@ -97,6 +100,7 @@ public class BookListViewModel extends BaseViewModel {
         observer = new Observer() {
             @Override
             public void onSubscribe(Disposable d) {
+                Logs.v(TAG, "onSubscribe() called with: d = [" + d + "]");
             }
 
             @Override
@@ -108,6 +112,7 @@ public class BookListViewModel extends BaseViewModel {
 
             @Override
             public void onError(Throwable e) {
+                Logs.v(TAG, "onError() called with: e = [" + e.getLocalizedMessage() + "]");
             }
 
             @Override

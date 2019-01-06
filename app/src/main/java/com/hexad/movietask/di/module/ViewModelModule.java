@@ -11,19 +11,25 @@ import dagger.Binds;
 import dagger.Module;
 import dagger.multibindings.IntoMap;
 
+/**
+ * Created by Muhammad Younas
+ * Created Date : 1/4/2019.
+ * Email Address : engr.younasbangash@gmail.com
+ */
+
 @Module
-public abstract class ViewModelModule {
+public interface ViewModelModule {
 
     @Binds
     @IntoMap
     @ViewModelKey(SplashViewModel.class)
-    abstract ViewModel bindsLoginViewModel(SplashViewModel splashViewModel);
+    ViewModel bindsLoginViewModel(SplashViewModel splashViewModel);
 
     @Binds
     @IntoMap
     @ViewModelKey(BookListViewModel.class)
-    abstract ViewModel bindsBookListViewModel(BookListViewModel bookListViewModel);
+    ViewModel bindsBookListViewModel(BookListViewModel bookListViewModel);
 
     @Binds
-    abstract ViewModelProvider.Factory bindsViewModelFactory(ViewModelFactory viewModelFactory);
+    ViewModelProvider.Factory bindsViewModelFactory(ViewModelFactory viewModelFactory);
 }

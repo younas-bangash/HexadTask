@@ -23,13 +23,10 @@ public class SplashViewModel extends BaseViewModel {
      * Function to start the splash timer
      */
     public void startSplashTimer() {
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                // This method will be executed once the timer is over
-                //noinspection unchecked
-                getSplashTimerFinish().postValue(true);
-            }
+        new Handler().postDelayed(() -> {
+            // This method will be executed once the timer is over
+            //noinspection unchecked
+            getSplashTimerFinish().postValue(true);
         }, SPLASH_TIME_OUT);
     }
 

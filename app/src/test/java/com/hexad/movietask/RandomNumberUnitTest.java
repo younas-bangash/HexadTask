@@ -3,6 +3,7 @@ package com.hexad.movietask;
 import org.junit.Test;
 
 import static com.hexad.movietask.utils.AppUtils.getPosition;
+import static com.hexad.movietask.utils.AppUtils.getRating;
 import static org.junit.Assert.assertTrue;
 
 /**
@@ -23,9 +24,9 @@ public class RandomNumberUnitTest {
 
     @Test
     public void itemRating_isCorrect() {
-        int pos = getPosition();
+        int pos = getRating();
         int min = 0;
-        int max = 5;
+        int max = 8;
         boolean result = (pos >= min && pos <= max);
         assertTrue(result);
     }

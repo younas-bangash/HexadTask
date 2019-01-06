@@ -12,9 +12,10 @@ import android.support.annotation.NonNull;
  * Email Address : engr.younasbangash@gmail.com
  */
 public class BaseViewModel extends ViewModel implements Observable {
-    private transient PropertyChangeRegistry mCallbacks;
+    private PropertyChangeRegistry mCallbacks;
 
     public BaseViewModel() {
+        // Empty Constructor
     }
 
     @Override

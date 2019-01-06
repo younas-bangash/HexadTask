@@ -28,7 +28,8 @@ import dagger.android.support.AndroidSupportInjection;
 public abstract class BaseFragment<V extends ViewModel, D extends ViewDataBinding> extends Fragment {
 
     protected V viewModel;
-    protected D dataBinding;
+
+    private D dataBinding;
     @Inject
     ViewModelProvider.Factory viewModelFactory;
 
@@ -53,5 +54,9 @@ public abstract class BaseFragment<V extends ViewModel, D extends ViewDataBindin
         dataBinding = DataBindingUtil.inflate(inflater, getLayoutRes(), container, false);
         dataBinding.setVariable(BR.viewModel, viewModel);
         return dataBinding.getRoot();
+    }
+
+    public D getDataBinding() {
+        return dataBinding;
     }
 }
