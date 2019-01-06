@@ -23,11 +23,7 @@ public class SplashViewModel extends BaseViewModel {
      * Function to start the splash timer
      */
     public void startSplashTimer() {
-        new Handler().postDelayed(() -> {
-            // This method will be executed once the timer is over
-            //noinspection unchecked
-            getSplashTimerFinish().postValue(true);
-        }, SPLASH_TIME_OUT);
+        new Handler().postDelayed(() -> getSplashTimerFinish().postValue(true), SPLASH_TIME_OUT);
     }
 
     public MutableLiveData<Boolean> getSplashTimerFinish() {

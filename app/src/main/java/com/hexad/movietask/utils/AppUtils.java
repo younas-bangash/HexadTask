@@ -57,7 +57,6 @@ public class AppUtils {
                 byte[] buffer = new byte[size];
                 int data = is.read(buffer);
                 Logs.v("DataRead", String.valueOf(data));
-                is.close();
                 items = new Gson().fromJson(new String(buffer, "UTF-8"), Items.class);
             }
         } catch (IOException ex) {
