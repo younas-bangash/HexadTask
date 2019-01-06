@@ -6,6 +6,9 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -46,6 +49,7 @@ public class BookListFragment extends BaseFragment<BookListViewModel, FragmentBo
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setHasOptionsMenu(true);
         if (viewModel.items.size() == 0) {
             viewModel.readBookList();
             viewModel.createObservable();
@@ -61,6 +65,30 @@ public class BookListFragment extends BaseFragment<BookListViewModel, FragmentBo
             ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle(
                     AppApplication.getAppContext().getString(R.string.app_name));
         }
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.menu_custom, menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.startStopProcess:
+                if (null != getActivity()) {
+                    if (viewModel.isAutomaticAssignerRunning()) {
+                        item.setTitle(getActivity().getString(R.string.start));
+                    } else {
+                        item.setTitle(getActivity().getString(R.string.stop));
+                    }
+                }
+                viewModel.startProcess();
+                break;
+            default:
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     @Override

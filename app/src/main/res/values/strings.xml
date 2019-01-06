@@ -2,4 +2,6 @@
     <string name="app_name">HexadTask</string>
     <string name="welcomeMessage">Welcome</string>
     <string name="search_hint">Book List</string>
+    <string name="start">Start Auto Rating</string>
+    <string name="stop">Stop Auto Rating</string>
 </resources>

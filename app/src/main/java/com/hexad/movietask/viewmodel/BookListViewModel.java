@@ -146,7 +146,7 @@ public class BookListViewModel extends BaseViewModel {
         handler.post(runnableCode);
     }
 
-    public void onBtnClick() {
+    public void startProcess() {
         if (!isAutomaticAssignerRunning()) {
             startRatingAssigner();
         } else {
