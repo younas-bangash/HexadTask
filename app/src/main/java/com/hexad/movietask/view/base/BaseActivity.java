@@ -23,7 +23,7 @@ import dagger.android.support.HasSupportFragmentInjector;
 public abstract class BaseActivity<D extends ViewDataBinding> extends AppCompatActivity
         implements HasSupportFragmentInjector {
 
-    public D dataBinding;
+    private D dataBinding;
     @Inject
     DispatchingAndroidInjector<Fragment> fragmentAndroidInjector;
 
@@ -40,6 +40,10 @@ public abstract class BaseActivity<D extends ViewDataBinding> extends AppCompatA
     @Override
     public AndroidInjector<Fragment> supportFragmentInjector() {
         return fragmentAndroidInjector;
+    }
+
+    public D getDataBinding() {
+        return dataBinding;
     }
 }
 
