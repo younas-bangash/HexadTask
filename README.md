@@ -7,6 +7,7 @@
 5. Repository pattern 
 6. JUnit for Unit testing 
 7. Gson for Json Parsing
+8. Used SonarQube for code Quality code inspection
 
 #  Advatages of using MVVM
 The whole application is built based on the MVVM architectural pattern. The main advatage of using MVVM, there is no two way dependency between ViewModel and Model unlike MVP. Here the view can observe the datachanges in the viewmodel as we are using LiveData which is lifecycle aware. The viewmodel to view communication is achieved through observer pattern (basically observing the state changes of the data in the viewmodel).
