@@ -4,7 +4,6 @@ import android.app.Application;
 
 import com.hexad.movietask.AppApplication;
 import com.hexad.movietask.di.builder.ActivityBuilderModule;
-import com.hexad.movietask.di.module.AppModule;
 
 import javax.inject.Singleton;
 
@@ -14,7 +13,6 @@ import dagger.android.support.AndroidSupportInjectionModule;
 
 @Singleton
 @Component(modules = {
-        AppModule.class,
         AndroidSupportInjectionModule.class,
         ActivityBuilderModule.class})
 public interface AppComponent {
